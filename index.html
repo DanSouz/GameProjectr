@@ -5,30 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4course1lesson</title>
+    <title>Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
 
 <body class="center">
-    <div class="level-panel">
-        <h1 class="level-text">Выбери сложность</h1>
-        <div class="form-level">
-            <div class="form-level_first">
-                <input type="radio" class="form-level_first__label" name="level" id="1">
-                <label for="1" class="form-level_first__number">1</label>
+    <div class="container"></div>
+    <div class="lobby">
+        <div class="level-panel">
+            <h1 class="level-text">Выбери сложность</h1>
+            <div class="form-level">
+                <div class="form-level_first">
+                    <input type="radio" class="form-level_first__label check" name="level" id="1">
+                    <label for="1" class="form-level_first__number">1</label>
+                </div>
+                <div class="form-level_second">
+                    <input type="radio" class="form-level_second__label check" name="level" id="2">
+                    <label for="2" class="form-level_second__number">2</label>
+                </div>
+                <div class="form-level_third">
+                    <input type="radio" class="form-level_third__label check" name="level" id="3">
+                    <label for="3" class="form-level_third__number">3</label>
+                </div>
             </div>
-            <div class="form-level_second">
-                <input type="radio" class="form-level_second__label" name="level" id="2">
-                <label for="2" class="form-level_second__number">2</label>
-            </div>
-            <div class="form-level_third">
-                <input type="radio" class="form-level_third__label" name="level" id="3">
-                <label for="3" class="form-level_third__number">3</label>
-            </div>
+            <button class="btn" type="submit">Старт</button>
         </div>
-        <button class="btn" type="submit">Старт</button>
     </div>
+    <script src="./script.js"></script>
+    <script src="./start.js"></script>
 </body>
 
-</html>ssh-add -K ~/.ssh/id_lkutu_rsa
+</html>

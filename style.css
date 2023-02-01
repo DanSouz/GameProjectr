@@ -21,6 +21,7 @@ body {
   border-radius: 12px;
   flex-direction: column;
   align-items: center;
+  caret-color: transparent;
 }
 .level-panel .level-text {
   width: 208px;
@@ -96,7 +97,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   color: #0080c1;
-  caret-color: transparent;
 }
 .level-panel .form-level_first__label {
   display: none;
@@ -120,7 +120,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   color: #0080c1;
-  caret-color: transparent;
 }
 .level-panel .form-level_second__label {
   display: none;
@@ -144,7 +143,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   color: #0080c1;
-  caret-color: transparent;
 }
 .level-panel .form-level_third__label {
   display: none;
@@ -170,7 +168,37 @@ body {
   justify-content: space-evenly;
   color: #ffffff;
 }
+.level-panel .btn:disabled:hover {
+  border: 1px solid #afafaf;
+  background: #b5b5b5;
+}
+.level-panel .btn:disabled {
+  border: 1px solid #afafaf;
+  background: #b5b5b5;
+}
 .level-panel .btn:hover {
+  cursor: pointer;
+  border: 1px solid #8ada00;
+  background: #8ada00;
+}
+
+.container {
+  caret-color: transparent;
+}
+.container .restart {
+  border: 1px solid #7ac100;
+  width: 246px;
+  height: 48px;
+  background: #7ac100;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+.container .restart:hover {
   cursor: pointer;
   border: 1px solid #8ada00;
   background: #8ada00;
