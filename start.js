@@ -1,7 +1,11 @@
+window.application = {
+    level: ''
+}
+
 const CONTAINER = document.querySelector('.container');
 const LOBBY = document.querySelector('.lobby');
 
-function renderFirstLevelScreen() {
+function renderLevelScreen(render) {
     const btn = document.createElement('button');
     btn.classList.add('restart');
     btn.textContent = 'Начать заново';
@@ -13,32 +17,12 @@ function renderFirstLevelScreen() {
 
     CONTAINER.appendChild(btn);
     LOBBY.innerHTML = '';
-}
 
-function renderSecondLevelScreen() {
-    const btn = document.createElement('button');
-    btn.classList.add('restart');
-    btn.textContent = 'Начать заново';
-    btn.setAttribute('type', 'submit');
+    if (render === '1') {
+        
+    } else if (render === '2') {
 
-    btn.addEventListener('click', () => {
-        location.reload();
-    });
+    } else if (render === '3') {
 
-    CONTAINER.appendChild(btn);
-    LOBBY.innerHTML = '';
-}
-
-function renderThirdLevelScreen() {
-    const btn = document.createElement('button');
-    btn.classList.add('restart');
-    btn.textContent = 'Начать заново';
-    btn.setAttribute('type', 'submit');
-
-    btn.addEventListener('click', () => {
-        location.reload();
-    });
-
-    CONTAINER.appendChild(btn);
-    LOBBY.innerHTML = '';
+    }
 }

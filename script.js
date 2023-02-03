@@ -9,24 +9,19 @@ inputs.forEach(input => {
     });
 });
 
+
 btn.addEventListener('click', (e) => {
     e.preventDefault();
 
     if (document.getElementById('1').checked) {
-        window.level = {
-            level: inputs[0].id
-        };
-        window.renderFirstLevelScreen();
+        renderLevelScreen('1');
+        window.application.level = inputs[0].id
     } else if (document.getElementById('2').checked) {
-        window.level = {
-            level: inputs[1].id
-        };
-        window.renderSecondLevelScreen();
+        renderLevelScreen('2');
+        window.application.level = inputs[1].id
     } else if (document.getElementById('3').checked) {
-        window.level = {
-            level: inputs[2].id
-        };
-        window.renderThirdLevelScreen();
+        renderLevelScreen('3');
+        window.application.level = inputs[2].id
     }
-    console.log(`${window.level.level} уровень`);
+    console.log(`${window.application.level} уровень`);   
 });
