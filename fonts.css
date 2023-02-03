@@ -2,6 +2,6 @@
     font-family: StratosSkyeng;
     font-style: normal;
     src: local('StratosSkyeng'),
-        url('./fontsSkypro/stratosskyengweb-regular.woff2')
+        url('./fonts.css/stratosskyengweb-regular.woff2')
             format('woff2');
 }
