@@ -13,6 +13,12 @@ body {
   padding-right: calc(50% - 240px);
 }
 
+.game {
+  width: 1000px;
+  padding-left: calc(50% - 500px);
+  padding-right: calc(50% - 500px);
+}
+
 .level-panel {
   display: flex;
   margin-top: 158px;
@@ -183,9 +189,36 @@ body {
 }
 
 .container {
+  margin-top: 22px;
   caret-color: transparent;
 }
-.container .restart {
+.container .firstTop {
+  display: flex;
+  align-items: center;
+  margin-left: 61px;
+  gap: 57px;
+  margin-top: 22px;
+  margin-top: -5px;
+  position: absolute;
+}
+.container .firstTop .timeStyle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.container .secondTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.container .secondTop .watchStyle {
+  font-weight: 400;
+  font-size: 64px;
+  color: #ffffff;
+}
+.container .secondTop .restart {
   border: 1px solid #7ac100;
   width: 246px;
   height: 48px;
@@ -198,8 +231,13 @@ body {
   justify-content: space-evenly;
   color: #ffffff;
 }
-.container .restart:hover {
+.container .secondTop .restart:hover {
   cursor: pointer;
   border: 1px solid #8ada00;
   background: #8ada00;
 }
+.container .cardsStyle {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */

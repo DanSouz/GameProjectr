@@ -24,4 +24,4 @@ btn.addEventListener('click', (e) => {
         window.application.level = inputs[2].id
     }
     console.log(`${window.application.level} уровень`);   
-});
+}); 
