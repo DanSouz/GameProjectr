@@ -5,6 +5,11 @@
       "browser": true
     },
     "rules": {
+      "prettier/prettier": [ "error",
+        {},
+        {
+          "usePrettierrc": false
+        }],
       "import/no-extraneous-dependencies": "off",
       "import/prefer-default-export": "off",
       "no-confusing-arrow": "off",
@@ -22,7 +27,6 @@
       ],
       "no-plusplus": "off"
     },
-    "parser": "babel-eslint",
     "plugins": ["react"],
     "globals": {
       "browser": true,
