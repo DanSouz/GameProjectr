@@ -256,7 +256,11 @@ body {
         flex-wrap: wrap;
 
         &_img {
-
         }
+    .toolCard {
+        .cardsStyle_backImg {
+            margin-left: -95px;
+        }
+    }
     }
 }
