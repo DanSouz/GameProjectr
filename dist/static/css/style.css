@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #004980;
+  font-family: "StratosSkyeng";
+}
+
+.center {
+  padding-left: calc(50% - 240px);
+  padding-right: calc(50% - 240px);
+}
+
+.game {
+  width: 1000px;
+  padding-left: calc(50% - 500px);
+  padding-right: calc(50% - 500px);
+}
+
+.level-panel {
+  display: flex;
+  margin-top: 158px;
+  height: 459px;
+  background: #c2f5ff;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  caret-color: transparent;
+}
+.level-panel .level-text {
+  width: 208px;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #004980;
+  margin-top: 52px;
+  margin-bottom: 48px;
+}
+.level-panel .form-level {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 67px;
+}
+.level-panel .form-level .form-level_first input:hover + label {
+  border: 2px solid rgba(0, 73, 128, 0.631372549);
+  box-shadow: 0 0 4px rgba(0, 73, 128, 0.631372549);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.level-panel .form-level .form-level_first input:checked + label {
+  border: 2px solid #004980;
+  box-sizing: border-box;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+}
+.level-panel .form-level .form-level_second input:hover + label {
+  border: 2px solid rgba(0, 73, 128, 0.631372549);
+  box-shadow: 0 0 4px rgba(0, 73, 128, 0.631372549);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.level-panel .form-level .form-level_second input:checked + label {
+  border: 2px solid #004980;
+  box-sizing: border-box;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+}
+.level-panel .form-level .form-level_third input:hover + label {
+  border: 2px solid rgba(0, 73, 128, 0.631372549);
+  box-shadow: 0 0 4px rgba(0, 73, 128, 0.631372549);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.level-panel .form-level .form-level_third input:checked + label {
+  border: 2px solid #004980;
+  box-sizing: border-box;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+}
+.level-panel .form-level_first {
+  background: #ffffff;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #0080c1;
+}
+.level-panel .form-level_first__label {
+  display: none;
+}
+.level-panel .form-level_first__number {
+  cursor: pointer;
+  justify-content: space-evenly;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+}
+.level-panel .form-level_second {
+  background: #ffffff;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #0080c1;
+}
+.level-panel .form-level_second__label {
+  display: none;
+}
+.level-panel .form-level_second__number {
+  cursor: pointer;
+  justify-content: space-evenly;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+}
+.level-panel .form-level_third {
+  background: #ffffff;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #0080c1;
+}
+.level-panel .form-level_third__label {
+  display: none;
+}
+.level-panel .form-level_third__number {
+  cursor: pointer;
+  justify-content: space-evenly;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+}
+.level-panel .btn {
+  border: 1px solid #7ac100;
+  width: 246px;
+  height: 50px;
+  background: #7ac100;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+.level-panel .btn:disabled:hover {
+  border: 1px solid #afafaf;
+  background: #b5b5b5;
+}
+.level-panel .btn:disabled {
+  border: 1px solid #afafaf;
+  background: #b5b5b5;
+}
+.level-panel .btn:hover {
+  cursor: pointer;
+  border: 1px solid #8ada00;
+  background: #8ada00;
+}
+
+.container {
+  margin-top: 22px;
+  caret-color: transparent;
+}
+.container .firstTop {
+  display: flex;
+  align-items: center;
+  margin-left: 61px;
+  gap: 57px;
+  margin-top: 22px;
+  margin-top: -5px;
+  position: absolute;
+}
+.container .firstTop .timeStyle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.container .secondTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.container .secondTop .watchStyle {
+  font-weight: 400;
+  font-size: 64px;
+  color: #ffffff;
+}
+.container .secondTop .restart {
+  border: 1px solid #7ac100;
+  width: 246px;
+  height: 48px;
+  background: #7ac100;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+.container .secondTop .restart:hover {
+  cursor: pointer;
+  border: 1px solid #8ada00;
+  background: #8ada00;
+}
+.container .cardsStyle {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.container .cardsStyle .toolCard .cardsStyle_backImg {
+  margin-left: -95px;
+}/*# sourceMappingURL=style.css.map */
